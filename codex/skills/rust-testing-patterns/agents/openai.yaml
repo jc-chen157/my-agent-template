@@ -1,0 +1,7 @@
+interface:
+  display_name: "Rust Testing Patterns"
+  short_description: "Rust unit, async, and integration test guidance"
+  default_prompt: "Use $rust-testing-patterns to review or improve these Rust tests."
+
+policy:
+  allow_implicit_invocation: true

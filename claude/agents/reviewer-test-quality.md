@@ -28,6 +28,24 @@ If you notice one of those, route it to:
 - `reviewer-best-practice`
 - `reviewer-logic-security`
 
+## Language-Specific Pairing
+
+Pair this reviewer with the matching testing-pattern skill when the stack is known:
+
+- `java-testing-patterns.md`
+- `python-testing-patterns.md`
+- `golang-testing-patterns.md`
+- `rust-testing-patterns.md`
+- `typescript-testing-patterns.md`
+
+Add the matching fixture skill when the review includes shared test setup or reusable helpers:
+
+- `java-test-fixtures.md`
+- `python-test-fixtures.md`
+- `golang-test-fixtures.md`
+- `rust-test-fixtures.md`
+- `typescript-test-fixtures.md`
+
 ## Review Style
 
 - Focus on what the tests actually prove, not coverage theater.

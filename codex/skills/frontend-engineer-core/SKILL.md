@@ -16,3 +16,11 @@ Adopt a staff-plus frontend mindset:
 When stack details matter, also load:
 
 - `react-frontend`
+
+If the task includes writing or reshaping tests, also load:
+
+- `typescript-testing-patterns`
+
+If the task includes shared test setup, builders, or helpers, also load:
+
+- `typescript-test-fixtures`

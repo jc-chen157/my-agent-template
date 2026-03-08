@@ -33,3 +33,11 @@ Load the relevant skill from `claude/skills/`:
 - `react-frontend.md`
 
 Combine general frontend judgment from this agent with the stack-specific rules from the skill.
+
+If the task includes writing or reshaping tests, also load:
+
+- `typescript-testing-patterns.md`
+
+If the task includes shared test setup, builders, or helpers, also load:
+
+- `typescript-test-fixtures.md`

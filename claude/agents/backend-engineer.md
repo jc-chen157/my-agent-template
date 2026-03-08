@@ -37,3 +37,19 @@ Load the relevant skill from `claude/skills/`:
 - `node-nextjs-backend.md`
 
 Combine general backend judgment from this agent with the stack-specific rules from the skill.
+
+If the task includes writing or reshaping tests, also load the matching testing-pattern skill:
+
+- `java-testing-patterns.md`
+- `python-testing-patterns.md`
+- `golang-testing-patterns.md`
+- `rust-testing-patterns.md`
+- `typescript-testing-patterns.md` for TypeScript backend work
+
+If the task includes shared test setup, builders, or helpers, also load the matching fixture skill:
+
+- `java-test-fixtures.md`
+- `python-test-fixtures.md`
+- `golang-test-fixtures.md`
+- `rust-test-fixtures.md`
+- `typescript-test-fixtures.md` for TypeScript backend work

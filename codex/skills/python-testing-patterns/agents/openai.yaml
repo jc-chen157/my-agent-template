@@ -1,0 +1,7 @@
+interface:
+  display_name: "Python Testing Patterns"
+  short_description: "pytest and Python web test guidance"
+  default_prompt: "Use $python-testing-patterns to review or improve these Python tests."
+
+policy:
+  allow_implicit_invocation: true

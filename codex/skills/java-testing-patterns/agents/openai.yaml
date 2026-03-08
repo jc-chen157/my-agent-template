@@ -1,0 +1,7 @@
+interface:
+  display_name: "Java Testing Patterns"
+  short_description: "JUnit, AssertJ, Mockito, and Spring test guidance"
+  default_prompt: "Use $java-testing-patterns to review or improve these Java tests."
+
+policy:
+  allow_implicit_invocation: true

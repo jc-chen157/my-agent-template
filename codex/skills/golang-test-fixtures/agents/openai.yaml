@@ -1,0 +1,7 @@
+interface:
+  display_name: "Go Test Fixtures"
+  short_description: "Go test setup, helpers, and fixture guidance"
+  default_prompt: "Use $golang-test-fixtures to improve these Go test fixtures and shared setup."
+
+policy:
+  allow_implicit_invocation: true

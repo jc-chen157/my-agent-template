@@ -1,0 +1,7 @@
+interface:
+  display_name: "Java Test Fixtures"
+  short_description: "Java fixture builders and test setup guidance"
+  default_prompt: "Use $java-test-fixtures to improve these Java test fixtures and shared setup."
+
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,7 @@
+interface:
+  display_name: "TypeScript Test Fixtures"
+  short_description: "TypeScript fixture and setup guidance"
+  default_prompt: "Use $typescript-test-fixtures to improve these TypeScript test fixtures and shared setup."
+
+policy:
+  allow_implicit_invocation: true

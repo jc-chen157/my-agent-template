@@ -25,6 +25,22 @@ Route those to:
 - `reviewer-best-practice`
 - `reviewer-logic-security`
 
+Pair this reviewer with the matching testing-pattern skill when the stack is known:
+
+- `java-testing-patterns`
+- `python-testing-patterns`
+- `golang-testing-patterns`
+- `rust-testing-patterns`
+- `typescript-testing-patterns`
+
+Add the matching fixture skill when the review includes shared test setup or reusable helpers:
+
+- `java-test-fixtures`
+- `python-test-fixtures`
+- `golang-test-fixtures`
+- `rust-test-fixtures`
+- `typescript-test-fixtures`
+
 Review heuristics:
 
 - happy path only, no failure-path proof
