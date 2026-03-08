@@ -1,0 +1,7 @@
+interface:
+  display_name: "Reviewer: Test Quality"
+  short_description: "Verification, coverage, and test-quality review"
+  default_prompt: "Use $reviewer-test-quality to review this change for missing scenarios, weak assertions, flaky tests, and verification gaps."
+
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Python Backend"
+  short_description: "Django, Flask, and FastAPI backend guidance"
+  default_prompt: "Use $python-backend for this Django, Flask, or FastAPI backend task."

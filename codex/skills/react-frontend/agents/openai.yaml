@@ -1,0 +1,4 @@
+interface:
+  display_name: "React Frontend"
+  short_description: "Modern React and TypeScript UI guidance"
+  default_prompt: "Use $react-frontend for this React and TypeScript frontend task."

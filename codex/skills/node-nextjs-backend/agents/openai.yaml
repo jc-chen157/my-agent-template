@@ -1,0 +1,4 @@
+interface:
+  display_name: "Node/Next.js Backend"
+  short_description: "Node.js and Next.js server guidance"
+  default_prompt: "Use $node-nextjs-backend for this Node.js or Next.js backend task."

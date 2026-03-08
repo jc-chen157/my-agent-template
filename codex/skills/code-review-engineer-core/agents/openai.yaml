@@ -1,0 +1,4 @@
+interface:
+  display_name: "Code Review Engineer"
+  short_description: "Review-first guidance for bugs, risks, and tests"
+  default_prompt: "Use $code-review-engineer-core to review this change for bugs, regressions, and test gaps."

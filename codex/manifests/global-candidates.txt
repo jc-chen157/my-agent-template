@@ -1,0 +1,16 @@
+# Skills in this file are reusable enough to publish into the global Codex skill
+# directory when you want them available across repositories.
+
+backend-engineer-core
+code-review-engineer-core
+frontend-engineer-core
+go-backend
+java-backend
+node-nextjs-backend
+python-backend
+react-frontend
+reviewer-best-practice
+reviewer-logic-security
+rust-desktop
+rust-server
+reviewer-test-quality

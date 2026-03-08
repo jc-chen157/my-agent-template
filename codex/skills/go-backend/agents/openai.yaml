@@ -1,0 +1,4 @@
+interface:
+  display_name: "Go Backend"
+  short_description: "Gin, SQLite, and Go service guidance"
+  default_prompt: "Use $go-backend for this Gin or Go backend service task."

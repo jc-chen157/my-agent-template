@@ -1,0 +1,4 @@
+interface:
+  display_name: "Java Backend"
+  short_description: "Spring Boot and jOOQ backend guidance"
+  default_prompt: "Use $java-backend for this Spring Boot or jOOQ backend task."

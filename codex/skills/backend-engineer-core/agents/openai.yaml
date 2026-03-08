@@ -1,0 +1,4 @@
+interface:
+  display_name: "Backend Engineer"
+  short_description: "Staff-level backend build and debug guidance"
+  default_prompt: "Use $backend-engineer-core to implement or debug this backend task."

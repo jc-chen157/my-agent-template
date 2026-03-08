@@ -1,0 +1,4 @@
+interface:
+  display_name: "Frontend Engineer"
+  short_description: "Staff-level frontend build and UI guidance"
+  default_prompt: "Use $frontend-engineer-core to implement or debug this frontend task."

@@ -1,0 +1,7 @@
+interface:
+  display_name: "Reviewer: Logic & Security"
+  short_description: "Bug, correctness, and security review lane"
+  default_prompt: "Use $reviewer-logic-security to review this change for logic bugs, unsafe assumptions, and security risks."
+
+policy:
+  allow_implicit_invocation: true

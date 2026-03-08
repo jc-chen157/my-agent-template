@@ -1,0 +1,4 @@
+interface:
+  display_name: "Rust Server"
+  short_description: "Tokio and Axum backend guidance"
+  default_prompt: "Use $rust-server for this Rust backend service task."

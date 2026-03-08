@@ -1,0 +1,4 @@
+interface:
+  display_name: "Rust Desktop"
+  short_description: "Rust desktop app and GUI guidance"
+  default_prompt: "Use $rust-desktop for this Rust desktop application task."
