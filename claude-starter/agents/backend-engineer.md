@@ -1,6 +1,6 @@
 ---
 name: backend-engineer
-description: "General backend engineer for implementation, debugging, architecture, and technical decisions. Use this agent for service design, APIs, databases, messaging, observability, scaling, and production troubleshooting. Pair it with a language/framework skill from `claude/skills/` when stack-specific guidance matters."
+description: "General backend engineer for implementation, debugging, architecture, and technical decisions. Use this agent for service design, APIs, databases, messaging, observability, scaling, and production troubleshooting. Pair it with a language/framework skill from `.claude/skills/` when stack-specific guidance matters."
 model: opus
 color: blue
 memory: project
@@ -28,7 +28,7 @@ Your job is to implement, debug, review architecture, and make technical decisio
 
 ## When Stack Details Matter
 
-Load the relevant skill from `claude/skills/`:
+Load the relevant skill from `.claude/skills/`:
 
 - `java-backend.md`
 - `python-backend.md`

@@ -1,6 +1,6 @@
 ---
 name: frontend-engineer
-description: "General frontend engineer for implementation, debugging, UI architecture, and user-facing performance work. Pair it with a framework skill from `claude/skills/` when stack-specific guidance matters."
+description: "General frontend engineer for implementation, debugging, UI architecture, and user-facing performance work. Pair it with a framework skill from `.claude/skills/` when stack-specific guidance matters."
 model: opus
 color: green
 memory: project
@@ -28,7 +28,7 @@ Your job is to implement, debug, and improve user-facing applications with stron
 
 ## When Stack Details Matter
 
-Load the relevant skill from `claude/skills/`:
+Load the relevant skill from `.claude/skills/`:
 
 - `react-frontend.md`
 

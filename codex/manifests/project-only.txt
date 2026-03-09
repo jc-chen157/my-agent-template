@@ -1,4 +1,0 @@
-# Skills in this file should stay project-local.
-# Keep repo-specific wrappers, business-domain skills, and custom workflow skills here.
-#
-# There are no project-only Codex skills in the new role/stack layout yet.
