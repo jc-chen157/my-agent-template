@@ -18,13 +18,13 @@ Expected behavior:
 - name the exact missing decision
 - explain why the missing input materially changes the design
 
-## Fixture 03: Low-Risk Contract Auto-Continues
+## Fixture 03: Contract Review Stops For Manual Validation
 
 Expected behavior:
-- `Risk Level: low`
+- the `Contract Packet` is printed inline in the Claude console
 - report `Current Phase: contract_ready`
-- report `User Gate: none`
-- task breakdown may proceed when material open questions are absent
+- report `User Gate: needs_approval`
+- task breakdown does not proceed until the user approves the contract
 
 ## Fixture 04: High-Risk Contract Requires Approval
 
@@ -32,6 +32,7 @@ Expected behavior:
 - `Risk Level: medium` or `high`
 - report `Current Phase: contract_ready`
 - report `User Gate: needs_approval`
+- print the full contract inline for review
 - stop before task breakdown
 
 ## Fixture 05: Task Packet Enforces Sizing

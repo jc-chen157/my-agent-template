@@ -9,7 +9,8 @@ All internal paths below assume that installed location.
 - If the user asks for planning or uses the `planning:` prefix, use `.claude/agents/master-planner.md`.
 - For planning-first work, follow `.claude/planning/protocol.md` as the source of truth for planning phases, user gates, artifact schemas, traceability, TDD policy, and handoff rules.
 - During planning, do not implement code or hand work to execution subagents before the user approves the task packet.
-- Require approval after the initial brief and before execution. Use the risk-based contract gate from `.claude/planning/protocol.md`.
+- Require approval after the initial brief, after the contract packet, and before execution.
+- When a planning artifact is ready for user review, print it inline in Claude so the user can read it there without opening another app.
 - If something goes sideways, stop and re-plan immediately instead of pushing through drift.
 - Use plan mode for verification steps, not just building.
 - Write decision-complete specs up front to reduce ambiguity.

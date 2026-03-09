@@ -82,8 +82,7 @@ Interpretation:
 
 Default gate behavior:
 - after the `Initial Planning Brief`, use `needs_approval` unless the phase is `blocked`
-- after the `Contract Packet`, use `needs_approval` when `risk_level` is `medium` or `high`
-- after the `Contract Packet`, low-risk work may continue with `none` if material open questions are absent
+- after the `Contract Packet`, use `needs_approval` so the user can manually validate the design before task breakdown
 - after the `Task Packet`, use `needs_approval` before any execution handoff
 
 ## Planner Response Contract
@@ -94,6 +93,11 @@ Every master planner response must report:
 - `User Gate`
 - `What I Need From You`
 - `Next Step`
+
+When `User Gate` is `needs_approval`:
+- print the full review-ready artifact inline in the Claude console
+- do not force the user to open another app or file just to read the artifact
+- make the artifact easy to scan in one place before asking for approval
 
 Precedence rules:
 - the master planner owns `Current Phase` and `User Gate`

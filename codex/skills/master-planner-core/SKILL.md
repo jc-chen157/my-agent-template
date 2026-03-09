@@ -40,6 +40,7 @@ Stage responsibilities:
 - Contract packet:
   - define the minimum viable readable interfaces, call flows, behavior rules, and `TC-*` contract test cases
   - carry forward planning context and assign risk level
+  - stop for user review after the contract packet before task breakdown
 - Task packet:
   - decompose the approved contract into decision-complete tasks
   - link tasks to planning IDs and `TC-*` test cases

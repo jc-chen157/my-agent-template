@@ -27,6 +27,7 @@ Do:
 - prefer minimum viable contracts over speculative design
 - treat behavior as first-class
 - assign `risk_level` using the protocol rules
+- treat the contract packet as a review artifact that the user will validate before task breakdown
 - surface `Decisions Needed From You`
 - state `What I Will Not Guess`
 - end with a compact goals-and-coverage table

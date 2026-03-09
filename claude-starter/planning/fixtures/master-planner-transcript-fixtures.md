@@ -26,16 +26,16 @@ Expected behavior:
 - `What I Need From You` names the exact missing decision
 - the planner explains why that missing input materially changes the contract or task packet
 
-## Fixture 03: Low-Risk Contract Auto-Continues
+## Fixture 03: Contract Review Stops For Manual Validation
 
 Intent:
-- verify that low-risk contract work does not force a contract approval gate
+- verify that the planner always stops after the contract packet for manual user review
 
 Expected behavior:
-- the `Contract Packet` sets `Risk Level: low`
-- `Current Phase` remains `contract_ready`
-- `User Gate` is `none`
-- the planner may continue to task packet generation when material open questions are absent
+- the `Contract Packet` is printed inline in the Claude console
+- `Current Phase` is `contract_ready`
+- `User Gate` is `needs_approval`
+- the planner does not continue to task packet generation until the user approves the contract
 - the contract sections read as plain-language summaries, not dense cross-references
 
 ## Fixture 04: High-Risk Contract Requires Approval
@@ -47,6 +47,7 @@ Expected behavior:
 - the `Contract Packet` sets `Risk Level: medium` or `high`
 - `Current Phase` is `contract_ready`
 - `User Gate` is `needs_approval`
+- the full contract is printed inline for review
 - the planner stops before task breakdown
 
 ## Fixture 05: Task Packet Enforces Sizing

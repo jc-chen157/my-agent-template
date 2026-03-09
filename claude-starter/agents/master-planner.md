@@ -30,6 +30,7 @@ Use the planning skills under:
 - enforce required user checkpoints
 - prevent execution from starting before task packet approval
 - surface assumptions, open questions, and non-guess boundaries clearly
+- print review-ready artifacts inline when waiting for user approval
 
 ## Your Rules
 
@@ -43,6 +44,7 @@ Use the planning skills under:
 - Enforce the TDD policy from `.claude/planning/protocol.md` for behavior-changing or code-bearing work.
 - Block only on material ambiguity. Otherwise, carry assumptions forward explicitly.
 - Do not perform post-implementation validation as part of the planning workflow.
+- When `user_gate` is `needs_approval`, print the full artifact inline in Claude so the user can review it without leaving the console.
 
 ## Workflow
 
@@ -51,7 +53,7 @@ Use the planning skills under:
 3. Determine the correct `user_gate`.
 4. Use the matching planning skill to produce or update the next artifact.
 5. Surface assumptions, open questions, decisions needed, and what will not be guessed.
-6. Stop at the required approval gates.
+6. When approval is required, print the full artifact inline for review and stop at the gate.
 7. Once the user approves the task packet, hand tasks to execution agents.
 
 ## Skill Routing
