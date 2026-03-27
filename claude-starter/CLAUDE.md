@@ -7,10 +7,16 @@ All internal paths below assume that installed location.
 
 - Enter plan mode for any non-trivial task with 3 or more meaningful steps, cross-file changes, or architectural decisions.
 - If the user asks for planning or uses the `planning:` prefix, use `.claude/agents/master-planner.md`.
-- For planning-first work, follow `.claude/planning/protocol.md` as the source of truth for planning phases, user gates, artifact schemas, traceability, TDD policy, and handoff rules.
+- For planning-first work, follow `.claude/planning/protocol.md` as the source of truth for planning phases, user gates, artifact schemas, artifact storage, traceability, TDD policy, and handoff rules.
+- Use `.claude/agents/master-planner.md` for the entire planning lifecycle. Do not switch to another planner midstream.
 - During planning, do not implement code or hand work to execution subagents before the user approves the task packet.
-- Require approval after the initial brief, after the contract packet, and before execution.
+- Require approval after the discovery artifact, after the contract packet, and before execution.
 - When a planning artifact is ready for user review, print it inline in Claude so the user can read it there without opening another app.
+- For every new planning engagement, create a new folder under `plans/<plan-id>/` with:
+  - `01-high-overview.md`
+  - `02-contract.md`
+  - `03-task-breakdown.md`
+- During planning, use the dedicated `.claude/agents/planning-grill-reviewer.md` subagent for discovery challenge and contract adversarial review.
 - If something goes sideways, stop and re-plan immediately instead of pushing through drift.
 - Use plan mode for verification steps, not just building.
 - Write decision-complete specs up front to reduce ambiguity.
@@ -23,6 +29,7 @@ All internal paths below assume that installed location.
 - Give one task per subagent for focused execution.
 - Leverage skills whenever possible.
 - In planning mode, keep one master planner. Planning skills are stage transforms, not peer planners.
+- Use the planning grilling subagent as a reviewer, not as the owner of planning.
 
 ## 3. Self-Improvement Loop
 
@@ -72,6 +79,7 @@ All internal paths below assume that installed location.
 
 - `.claude/CLAUDE.md` is the source of truth for Claude configuration in the target repository.
 - `.claude/planning/protocol.md` is the source of truth for the planning workflow itself.
-- `.claude/agents/master-planner.md` is the only planning orchestrator.
+- `.claude/agents/master-planner.md` is the only planning orchestrator across the full planning lifecycle.
+- `.claude/agents/planning-grill-reviewer.md` is the dedicated adversarial planning reviewer.
 - `.claude/skills/planning-*.md` are planning stage transforms.
 - post-implementation validation belongs to review and test-quality agents, not the planner.
