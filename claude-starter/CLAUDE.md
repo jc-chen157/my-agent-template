@@ -30,6 +30,19 @@ All internal paths below assume that installed location.
 - Give one task per subagent for focused execution.
 - Leverage skills whenever possible.
 - In planning mode, keep one master planner. Do not introduce peer planners.
+- **For implementation, use the `backed-engineer` or `front-engineer` depending on the implementation tasks**
+- **Code review uses the project's three reviewers, not generic agents.**
+  When `/simplify`, `/review`, or any explicit code review is requested,
+  launch all three in parallel:
+  - `reviewer-logic-security` — bugs, security, concurrency, resource leaks
+  - `reviewer-best-practice` — maintainability, naming, abstraction, idioms
+  - `reviewer-test-quality` — test scenarios, assertions, mocking, flake risks
+    Do not substitute the harness defaults (`code-reviewer`,
+    `architect-reviewer`) — those don't carry the team's review conventions
+    defined in `.claude/agents/reviewer-*.md`. If the harness reports a
+    reviewer name as unknown, fall back to `general-purpose` with the
+    reviewer's `.md` content embedded as the system prompt rather than
+    silently using a generic reviewer.
 
 ## 3. Self-Improvement Loop
 
@@ -87,18 +100,15 @@ All internal paths below assume that installed location.
 
 # Project Storage Layout
 
-Claude-managed artifacts live under two top-level directories in the target repository:
+Artifacts are split between two top-level directories:
 
-`.claude/` (read-only configuration, checked into the repo):
+- `.agents/` — **agent-tool-agnostic** content. Any agent (Claude Code, Cursor, Codex, etc.) reads and writes here.
+  - `.agents/plans/` — planning artifacts. Top-level PRDs (`PRD.md`, `PRD-PHASE-1.md`) plus `<short-slug>/` subdirectories for new planning engagements (feature, architecture, implementation plans).
+  - `.agents/lessons/` — corrections-driven rules, one file per topic, reviewed at session start
+  - `.agents/memory/` — durable cross-session context (project facts, user preferences, external references)
+- `.claude/` — **Claude-specific configuration**.
+  - `.claude/planning/` — protocol and plan templates (read-only configuration)
+  - `.claude/agents/` — agent definitions (read-only configuration)
+  - `.claude/skills/` — stack-specific skill files (read-only configuration)
 
-- `.claude/planning/` — protocol and plan templates
-- `.claude/agents/` — agent definitions
-- `.claude/skills/` — stack-specific skill files
-
-`.agents/` (runtime artifacts written by agents across sessions):
-
-- `.agents/plans/<short-slug>/` — planning artifacts for each engagement (feature, architecture, implementation plans)
-- `.agents/lessons/` — corrections-driven rules, one file per topic, reviewed at session start
-- `.agents/memory/` — durable cross-session context (project facts, user preferences, external references)
-
-Do not write runtime artifacts (plans, lessons, memory) into `.claude/`, and do not put configuration into `.agents/`. Do not invent additional top-level directories without updating this section.
+Do not write planning artifacts, lessons, or memory anywhere else. Do not invent additional top-level directories without updating this section.
