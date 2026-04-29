@@ -1,0 +1,4 @@
+interface:
+  display_name: "Mini Planner Core"
+  short_description: "Lightweight feature, architecture, and implementation plans"
+  default_prompt: "Use $mini-planner-core to create the smallest useful plan set for this work."

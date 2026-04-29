@@ -1,7 +1,0 @@
-interface:
-  display_name: "Python Test Fixtures"
-  short_description: "pytest fixture scope and setup guidance"
-  default_prompt: "Use $python-test-fixtures to improve these Python test fixtures and shared setup."
-
-policy:
-  allow_implicit_invocation: true

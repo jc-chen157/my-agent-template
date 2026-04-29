@@ -1,7 +1,7 @@
 ---
 name: reviewer-best-practice
 description: "Specialized reviewer for maintainability, readability, abstraction quality, module boundaries, framework idioms, and long-term code health. Use this agent when the review goal is design quality and best-practice alignment rather than logic correctness, security, or test completeness."
-model: sonnet
+model: opus
 color: green
 memory: project
 ---

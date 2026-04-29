@@ -33,8 +33,6 @@ Recommended pairing examples:
 - React app work: `frontend-engineer` + `react-frontend`
 - Node or Next.js backend work: `backend-engineer` + `node-nextjs-backend`
 - Any review task: `code-review-engineer` + matching stack skill
-- Maintainability/design review: `reviewer-best-practice`
-- Correctness/security review: `reviewer-logic-security`
 - Test and verification review: `reviewer-test-quality`
 
 ## Codex Layout
@@ -49,8 +47,6 @@ Recommended pairing examples:
 - Backend implementation: `backend-engineer-core` + matching stack skill
 - Frontend implementation: `frontend-engineer-core` + `react-frontend`
 - Code review: `code-review-engineer-core` + matching stack skill
-- Specialized maintainability review: `reviewer-best-practice`
-- Specialized correctness/security review: `reviewer-logic-security`
 - Specialized test review: `reviewer-test-quality`
 
 Planning workflow:
@@ -62,15 +58,15 @@ Planning workflow:
 
 Codex planning workflow:
 
-- Use `codex/skills/master-planner-core/SKILL.md` when Codex should plan before implementation.
-- The Codex planner is self-contained inside `codex/skills/master-planner-core/`.
+- Use `codex/skills/mini-planner-core/SKILL.md` when Codex should plan before implementation.
+- The Codex planner follows planning-protocol-v2 and is self-contained inside `codex/skills/mini-planner-core/`.
 - Copying `codex/` to a new repository is enough to bring the Codex planning workflow with it.
 
 Testing overlays:
 
-- Writing backend tests: role/core + stack skill + matching `*-testing-patterns`
-- Reviewing test quality: `reviewer-test-quality` + matching `*-testing-patterns`
-- Shared fixture/setup work: also add matching `*-test-fixtures`
+- Writing backend tests: role/core + stack skill + matching `*-testing`
+- Reviewing test quality: `reviewer-test-quality` + matching `*-testing`
+- Shared fixture/setup work: covered by the matching `*-testing` skill
 
 ## Memory Rule
 

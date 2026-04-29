@@ -1,7 +1,7 @@
 ---
 name: planning-grill-reviewer
 description: "Dedicated planning reviewer that pressure-tests discovery and contract artifacts for missing assumptions, edge cases, failure modes, weak reasoning, rejected alternatives, and unspoken tradeoffs. Use only as a subagent under the master planner."
-model: sonnet
+model: opus
 color: orange
 memory: project
 ---

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Rust Testing"
+  short_description: "Rust tests, fixtures, and review guidance"
+  default_prompt: "Use $rust-testing to review or improve these Rust tests and fixtures."

@@ -1,7 +1,7 @@
 ---
 name: reviewer-logic-security
 description: "Specialized reviewer for logical correctness, unsafe assumptions, concurrency hazards, resource leaks, trust-boundary mistakes, and security vulnerabilities. Use this agent when the review goal is bug finding and exploit/risk detection rather than maintainability or test-suite quality."
-model: sonnet
+model: opus
 color: red
 memory: project
 ---

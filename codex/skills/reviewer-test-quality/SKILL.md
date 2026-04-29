@@ -22,24 +22,15 @@ Out of scope:
 
 Route those to:
 
-- `reviewer-best-practice`
-- `reviewer-logic-security`
+- `code-review-engineer-core`
 
-Pair this reviewer with the matching testing-pattern skill when the stack is known:
+Pair this reviewer with the matching testing skill when the stack is known:
 
-- `java-testing-patterns`
-- `python-testing-patterns`
-- `golang-testing-patterns`
-- `rust-testing-patterns`
-- `typescript-testing-patterns`
-
-Add the matching fixture skill when the review includes shared test setup or reusable helpers:
-
-- `java-test-fixtures`
-- `python-test-fixtures`
-- `golang-test-fixtures`
-- `rust-test-fixtures`
-- `typescript-test-fixtures`
+- `java-testing`
+- `python-testing`
+- `go-testing`
+- `rust-testing`
+- `typescript-testing`
 
 Review heuristics:
 

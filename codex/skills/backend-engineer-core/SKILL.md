@@ -21,18 +21,10 @@ When stack details matter, also load one of these skills:
 - `rust-server`
 - `node-nextjs-backend`
 
-If the task includes writing or reshaping tests, also load the matching testing-pattern skill:
+If the task includes writing, reshaping, or reviewing tests and fixtures, also load the matching testing skill:
 
-- `java-testing-patterns`
-- `python-testing-patterns`
-- `golang-testing-patterns`
-- `rust-testing-patterns`
-- `typescript-testing-patterns` for TypeScript backend work
-
-If the task includes shared test setup, builders, or helpers, also load the matching fixture skill:
-
-- `java-test-fixtures`
-- `python-test-fixtures`
-- `golang-test-fixtures`
-- `rust-test-fixtures`
-- `typescript-test-fixtures` for TypeScript backend work
+- `java-testing`
+- `python-testing`
+- `go-testing`
+- `rust-testing`
+- `typescript-testing` for TypeScript backend work

@@ -70,39 +70,15 @@ Common combinations:
 - design spike: architecture plan only
 - large or ambiguous effort: all three
 
-## Templates
-
-Plan templates live alongside this protocol:
-
-- `.claude/planning/templates/feature-plan.md`
-- `.claude/planning/templates/architecture-plan.md`
-- `.claude/planning/templates/implementation-plan.md`
-
-When drafting a plan, copy the matching template and delete sections that do not apply.
-
-## Storage
-
-Default layout for a planning engagement:
-
-- `plans/<short-slug>/feature-plan.md`
-- `plans/<short-slug>/architecture-plan.md`
-- `plans/<short-slug>/implementation-plan.md`
-
-Rules:
-
-- create only the files that apply; no empty placeholders
-- update the same file as the plan evolves; do not fork copies for minor revisions
-- if the project already uses a different planning location, follow that instead
-
 ## Linking
 
-Do not use a formal trace matrix.
+Do not use a formal trace matrix for now.
 
 Use lightweight linking only:
 
-- `Related docs:`
-- `Depends on:`
-- `Implements:`
+- `Related docs`
+- `Depends on`
+- `Implements`
 
 That is enough to navigate between plans without adding noise.
 

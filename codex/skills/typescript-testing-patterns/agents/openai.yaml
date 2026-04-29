@@ -1,7 +1,0 @@
-interface:
-  display_name: "TypeScript Testing Patterns"
-  short_description: "Vitest and TS test-pattern guidance"
-  default_prompt: "Use $typescript-testing-patterns to review or improve these TypeScript tests."
-
-policy:
-  allow_implicit_invocation: true

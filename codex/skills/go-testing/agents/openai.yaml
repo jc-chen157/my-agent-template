@@ -1,0 +1,4 @@
+interface:
+  display_name: "Go Testing"
+  short_description: "Go tests, fixtures, and review guidance"
+  default_prompt: "Use $go-testing to review or improve these Go tests and fixtures."

@@ -1,7 +1,0 @@
-interface:
-  display_name: "Rust Test Fixtures"
-  short_description: "Rust fixture and setup guidance"
-  default_prompt: "Use $rust-test-fixtures to improve these Rust test fixtures and shared setup."
-
-policy:
-  allow_implicit_invocation: true

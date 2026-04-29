@@ -1,7 +1,0 @@
-interface:
-  display_name: "Reviewer: Best Practice"
-  short_description: "Maintainability and design-quality review lane"
-  default_prompt: "Use $reviewer-best-practice to review this change for maintainability, readability, and abstraction quality."
-
-policy:
-  allow_implicit_invocation: true

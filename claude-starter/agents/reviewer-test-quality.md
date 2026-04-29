@@ -1,7 +1,7 @@
 ---
 name: reviewer-test-quality
 description: "Specialized reviewer for test quality, verification confidence, missing scenarios, weak assertions, flaky structure, and test maintainability. Use this agent when the review goal is proving behavior well, not general code style, architecture, or deep logic/security analysis."
-model: sonnet
+model: opus
 color: blue
 memory: project
 ---

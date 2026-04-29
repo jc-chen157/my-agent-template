@@ -1,7 +1,0 @@
-interface:
-  display_name: "Go Testing Patterns"
-  short_description: "Go test patterns, tables, mocks, and httptest"
-  default_prompt: "Use $golang-testing-patterns to review or improve these Go tests."
-
-policy:
-  allow_implicit_invocation: true

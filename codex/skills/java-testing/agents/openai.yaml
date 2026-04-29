@@ -1,0 +1,4 @@
+interface:
+  display_name: "Java Testing"
+  short_description: "Java tests, fixtures, and review guidance"
+  default_prompt: "Use $java-testing to review or improve these Java tests and fixtures."

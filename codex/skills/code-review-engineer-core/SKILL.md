@@ -12,6 +12,13 @@ Use a review-first mindset:
 - Prefer concrete explanations and specific alternatives.
 - Keep summaries brief after the findings.
 
+Core focus areas:
+
+- Correctness and security: invalid state transitions, boundary-condition bugs, race conditions, resource leaks, trust-boundary mistakes, validation, auth, authz, and exploit paths.
+- Maintainability and design: responsibility ownership, naming, cohesion, abstraction quality, module and API boundaries, duplication, and language or framework idioms.
+- Operability and performance: resource usage, lifecycle behavior, error context, observability, retry/idempotency behavior, and avoidable bottlenecks.
+- Verification: missing scenarios, weak assertions, flaky structure, over-mocking, and whether changed behavior is proved well enough.
+
 Use these labels:
 
 - `Blocking`
@@ -28,3 +35,5 @@ When stack details matter, also load one of these skills:
 - `rust-desktop`
 - `react-frontend`
 - `node-nextjs-backend`
+
+For a deep test-quality pass, also load `reviewer-test-quality` and the matching testing skill.

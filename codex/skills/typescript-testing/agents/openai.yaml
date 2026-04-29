@@ -1,0 +1,4 @@
+interface:
+  display_name: "TypeScript Testing"
+  short_description: "TypeScript tests, fixtures, and review guidance"
+  default_prompt: "Use $typescript-testing to review or improve these TypeScript tests and fixtures."

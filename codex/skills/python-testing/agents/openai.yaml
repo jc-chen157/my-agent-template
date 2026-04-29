@@ -1,0 +1,4 @@
+interface:
+  display_name: "Python Testing"
+  short_description: "Python tests, fixtures, and review guidance"
+  default_prompt: "Use $python-testing to review or improve these Python tests and fixtures."
