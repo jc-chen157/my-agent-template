@@ -32,7 +32,7 @@ All internal paths below assume that installed location.
 - In planning mode, keep one master planner. Do not introduce peer planners.
 - **For implementation, use the `backed-engineer` or `front-engineer` depending on the implementation tasks**
 - **Code review uses the project's three reviewers, not generic agents.**
-  When `/simplify`, `/review`, or any explicit code review is requested,
+  Unless specified, when `/simplify`, `/review`, or any explicit code review is requested,
   launch all three in parallel:
   - `reviewer-logic-security` — bugs, security, concurrency, resource leaks
   - `reviewer-best-practice` — maintainability, naming, abstraction, idioms
