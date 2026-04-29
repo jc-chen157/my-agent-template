@@ -75,13 +75,14 @@ When in doubt, choose fewer plan types.
 
 Default layout for new planning engagements:
 
-- `plans/<short-slug>/feature-plan.md`
-- `plans/<short-slug>/architecture-plan.md`
-- `plans/<short-slug>/implementation-plan.md`
+- `.agents/plans/<short-slug>/feature-plan.md`
+- `.agents/plans/<short-slug>/architecture-plan.md`
+- `.agents/plans/<short-slug>/implementation-plan.md`
 
 Rules:
 
 - create only the files that apply; no empty placeholders
+- planning artifacts always live under `.agents/plans/`; lessons belong in `.agents/lessons/`, durable memory in `.agents/memory/` — never mix
 - if the project already uses a different planning location, follow that instead
 - update the same file as the plan evolves; do not fork copies for minor revisions
 

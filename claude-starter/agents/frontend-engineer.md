@@ -41,3 +41,9 @@ If the task includes writing or reshaping tests, also load:
 If the task includes shared test setup, builders, or helpers, also load:
 
 - `typescript-test-fixtures.md`
+
+## Storage
+
+- Read approved plans from `.agents/plans/<short-slug>/`; do not invent new plan locations.
+- Append corrections to `.agents/lessons/` (one file per topic) when the user pushes back on an approach.
+- Write durable cross-session conventions (component patterns, state-management norms, accessibility rules) to `.agents/memory/`. Do not store ephemeral task state there.

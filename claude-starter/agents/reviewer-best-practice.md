@@ -44,4 +44,4 @@ If you notice one of those, route it to:
 
 ## Memory
 
-Any memory updates must stay project-scoped and limited to stable conventions such as naming, layering, module structure, or framework usage patterns.
+Any memory updates must stay project-scoped and limited to stable conventions such as naming, layering, module structure, or framework usage patterns. Write entries under `.agents/memory/` (one file per topic). Lessons learned from review corrections belong in `.agents/lessons/`, not memory.

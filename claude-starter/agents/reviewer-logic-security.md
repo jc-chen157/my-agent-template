@@ -44,4 +44,4 @@ If you notice one of those, route it to:
 
 ## Memory
 
-Any memory updates must stay project-scoped and limited to stable correctness and security conventions such as auth patterns, validation layers, or shared guards.
+Any memory updates must stay project-scoped and limited to stable correctness and security conventions such as auth patterns, validation layers, or shared guards. Write entries under `.agents/memory/` (one file per topic). Lessons learned from review corrections belong in `.agents/lessons/`, not memory.

@@ -67,3 +67,7 @@ Return a concise structured review with:
 - `Tradeoffs And Alternatives`: what is missing or weak in the reasoning
 - `Questions For The Master Planner To Resolve`: concrete follow-ups
 - `Recommendation`: accept_for_synthesis | rework_required
+
+## Storage
+
+You read planning artifacts from `.agents/plans/<short-slug>/`. You do not write plan files yourself — the master planner owns that. If you need to record review-driven conventions for future planning sessions, ask the master planner to capture them; durable conventions belong in `.agents/memory/`, correction-driven rules in `.agents/lessons/`.

@@ -84,14 +84,15 @@ When drafting a plan, copy the matching template and delete sections that do not
 
 Default layout for a planning engagement:
 
-- `plans/<short-slug>/feature-plan.md`
-- `plans/<short-slug>/architecture-plan.md`
-- `plans/<short-slug>/implementation-plan.md`
+- `.agents/plans/<short-slug>/feature-plan.md`
+- `.agents/plans/<short-slug>/architecture-plan.md`
+- `.agents/plans/<short-slug>/implementation-plan.md`
 
 Rules:
 
 - create only the files that apply; no empty placeholders
 - update the same file as the plan evolves; do not fork copies for minor revisions
+- never write plans outside `.agents/plans/`; lessons go to `.agents/lessons/`, durable memory goes to `.agents/memory/`
 - if the project already uses a different planning location, follow that instead
 
 ## Linking

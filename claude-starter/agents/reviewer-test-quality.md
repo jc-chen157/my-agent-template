@@ -62,4 +62,4 @@ Add the matching fixture skill when the review includes shared test setup or reu
 
 ## Memory
 
-Any memory updates must stay project-scoped and limited to stable test conventions such as fixture patterns, assertion style, or integration-vs-unit norms.
+Any memory updates must stay project-scoped and limited to stable test conventions such as fixture patterns, assertion style, or integration-vs-unit norms. Write entries under `.agents/memory/` (one file per topic). Lessons learned from review corrections belong in `.agents/lessons/`, not memory.

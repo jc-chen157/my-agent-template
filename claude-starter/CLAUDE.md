@@ -15,7 +15,7 @@ All internal paths below assume that installed location.
 - Plan lifecycle is `working` → `approved`. Only the user promotes a plan to `approved`.
 - Require user approval on each plan before doing the work it describes.
 - When a plan is review-ready, print it inline so the user can review without opening another app.
-- For every new planning engagement, create `plans/<short-slug>/` and add only the plan files that apply:
+- For every new planning engagement, create `.agents/plans/<short-slug>/` and add only the plan files that apply:
   - `feature-plan.md`
   - `architecture-plan.md`
   - `implementation-plan.md`
@@ -33,10 +33,11 @@ All internal paths below assume that installed location.
 
 ## 3. Self-Improvement Loop
 
-- After any correction from the user, update `tasks/lessons.md` with the pattern.
+- After any correction from the user, append the pattern to `.agents/lessons/` (one lesson per file, named by topic).
 - Write rules for yourself that prevent the same mistake.
 - Ruthlessly iterate on these lessons until the mistake rate drops.
-- Review lessons at session start when the project has a relevant `tasks/lessons.md`.
+- Review `.agents/lessons/` at session start when relevant entries exist.
+- Persistent cross-session context (project facts, user preferences, references) belongs in `.agents/memory/`, not in lessons.
 
 ## 4. Verification Before Done
 
@@ -62,12 +63,13 @@ All internal paths below assume that installed location.
 
 # Task Management
 
-1. **Plan First**: Write the plan to `tasks/todo.md` with checkable items when the project uses that workflow.
+1. **Plan First**: Write plans under `.agents/plans/<short-slug>/` using the templates in `.claude/planning/templates/`.
 2. **Verify Plan**: Check in before starting implementation when the task is non-trivial.
 3. **Track Progress**: Mark items complete as you go.
 4. **Explain Changes**: Give a high-level summary at each meaningful step.
-5. **Document Results**: Add a review section to `tasks/todo.md` when that file exists and is part of the project workflow.
-6. **Capture Lessons**: Update `tasks/lessons.md` after corrections when the project uses that file.
+5. **Document Results**: Update the relevant plan file under `.agents/plans/<short-slug>/` as work progresses; do not create parallel review docs.
+6. **Capture Lessons**: After corrections, add a topic-named file under `.agents/lessons/`.
+7. **Persist Context**: Store durable cross-session facts (project context, user preferences, references) under `.agents/memory/`.
 
 # Core Principles
 
@@ -82,3 +84,21 @@ All internal paths below assume that installed location.
 - `.claude/planning/templates/` holds the plan-type templates: `feature-plan.md`, `architecture-plan.md`, `implementation-plan.md`.
 - `.claude/agents/master-planner.md` is the only planning orchestrator across the full planning engagement.
 - post-implementation validation belongs to review and test-quality agents, not the planner.
+
+# Project Storage Layout
+
+Claude-managed artifacts live under two top-level directories in the target repository:
+
+`.claude/` (read-only configuration, checked into the repo):
+
+- `.claude/planning/` — protocol and plan templates
+- `.claude/agents/` — agent definitions
+- `.claude/skills/` — stack-specific skill files
+
+`.agents/` (runtime artifacts written by agents across sessions):
+
+- `.agents/plans/<short-slug>/` — planning artifacts for each engagement (feature, architecture, implementation plans)
+- `.agents/lessons/` — corrections-driven rules, one file per topic, reviewed at session start
+- `.agents/memory/` — durable cross-session context (project facts, user preferences, external references)
+
+Do not write runtime artifacts (plans, lessons, memory) into `.claude/`, and do not put configuration into `.agents/`. Do not invent additional top-level directories without updating this section.

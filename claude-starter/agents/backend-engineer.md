@@ -53,3 +53,9 @@ If the task includes shared test setup, builders, or helpers, also load the matc
 - `golang-test-fixtures.md`
 - `rust-test-fixtures.md`
 - `typescript-test-fixtures.md` for TypeScript backend work
+
+## Storage
+
+- Read approved plans from `.agents/plans/<short-slug>/`; do not invent new plan locations.
+- Append corrections to `.agents/lessons/` (one file per topic) when the user pushes back on an approach.
+- Write durable cross-session conventions (stable patterns, module boundaries, framework idioms) to `.agents/memory/`. Do not store ephemeral task state there.
