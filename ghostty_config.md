@@ -1,3 +1,7 @@
+### Font to be used
+CommitMono https://commitmono.com/
+
+
 ### one repo to setup ghostty 
 https://github.com/jc-chen157/oh-my-ghostty
 
@@ -23,7 +27,7 @@ https://terminalcolors.com/ghostty/
 theme = tokyo-night-default
 background-opacity = 0.8
 background-blur-radius = 40
-font-family = Jetbrain Mono
+font-family = CommitMono
 font-size = 16
 cursor-style = block
 cursor-style-blink = false
